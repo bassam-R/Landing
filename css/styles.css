@@ -1,0 +1,73 @@
+:root{
+    --g-color: gold;
+}
+
+body{
+    background-image: linear-gradient(black , var(--g-color));
+    /* height: 100vh; */
+}
+
+ nav{
+    color: white;
+    box-shadow: 0 0 10px var(--g-color);
+    z-index: 1000;
+    
+ 
+}
+
+ nav .log{
+    max-width: 50px;
+}
+ nav button[aria-expanded="false"] {
+     border: solid 1px white;
+ }
+
+ nav button[aria-expanded="true"] {
+     border: solid 1px var(--g-color);
+ }
+ 
+ nav button svg{
+    color: whitesmoke;
+    font-size: 25px;
+ }
+
+ nav li a{
+    color: white !important;
+    font-weight: bold;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 15px;
+ }
+ nav li:hover a{
+    color: var(--g-color) !important;
+
+ }
+ nav li{
+    transition: .5s;
+    padding: 10px;
+ }
+
+ nav li:hover{
+    border-radius: 10px;
+    border: solid 1px var(--g-color);
+    box-shadow: 0 0 5px var(--g-color) inset ;
+ }
+
+.container .right .text h1{
+    color: var(--g-color);
+}
+
+
+
+.container .chose {
+    /* position: relative; */
+    bottom: 20px;
+    padding: 10px;
+    z-index: 1111;
+
+}
+.container .chose li{
+    cursor: pointer;
+}
+.container .chose img{
+    max-width: 70px;
+}
